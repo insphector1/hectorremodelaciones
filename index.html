@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decoración y Diseño | Héctor Castillo</title>
+
+<style>
+
+:root{
+--color1:#1f1f1f;
+--color2:#ffffff;
+--accent:#c89b3c;
+--bg:#f4f4f4;
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:var(--bg);
+color:#333;
+}
+
+/* HEADER HERO */
+
+.hero{
+height:90vh;
+background:url("foto_fondo.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-box{
+background:rgba(0,0,0,0.55);
+padding:45px;
+border-radius:12px;
+max-width:700px;
+}
+
+.hero h1{
+font-size:48px;
+margin:0;
+}
+
+.hero p{
+font-size:20px;
+margin-top:15px;
+}
+
+/* LANGUAGE BUTTON */
+
+.lang{
+position:fixed;
+top:20px;
+right:20px;
+background:var(--color1);
+color:white;
+padding:10px 16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+h2{
+border-left:5px solid var(--accent);
+padding-left:10px;
+margin-bottom:25px;
+}
+
+/* ABOUT */
+
+.about{
+font-size:18px;
+line-height:1.6;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+
+.card{
+background:white;
+padding:22px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.12);
+text-align:center;
+font-weight:bold;
+}
+
+/* EXPERIENCE */
+
+.exp-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.exp{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+object-fit:cover;
+height:200px;
+}
+
+/* CONTACT */
+
+.contact{
+background:var(--color1);
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.contact a{
+color:var(--accent);
+text-decoration:none;
+font-weight:bold;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:15px;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<button class="lang" onclick="toggleLang()">EN / ES</button>
+
+<!-- HERO -->
+
+<div class="hero">
+<div class="hero-box">
+
+<h1 data-es="Decoración y Diseño" data-en="Decoration & Design">Decoración y Diseño</h1>
+
+<p data-es="Remodelaciones • Detalles • Diseño personalizado" data-en="Remodeling • Custom Details • Design">
+Remodelaciones • Detalles • Diseño personalizado
+</p>
+
+<p data-es="Contratista independiente con más de 20 años de experiencia" data-en="Independent contractor with more than 20 years of experience">
+Contratista independiente con más de 20 años de experiencia
+</p>
+
+</div>
+</div>
+
+
+<!-- ABOUT -->
+
+<section>
+
+<h2 data-es="Sobre mí" data-en="About Me">Sobre mí</h2>
+
+<p class="about"
+
+ data-es="Mi nombre es Héctor Castillo. Trabajo de forma independiente ofreciendo servicios de decoración, remodelación y mejoras para casas y negocios. Tengo más de 20 años de experiencia en carpintería, instalación de vidrio, puertas, ventanas, muebles y diferentes trabajos de construcción. Me enfoco en realizar trabajos bien hechos, con responsabilidad y atención a los detalles."
+
+ data-en="My name is Héctor Castillo. I work independently providing decoration, remodeling and improvement services for homes and businesses. I have more than 20 years of experience in carpentry, glass installation, doors, windows, furniture and different construction work. My focus is delivering quality work with responsibility and attention to detail.">
+
+Mi nombre es Héctor Castillo. Trabajo de forma independiente ofreciendo servicios de decoración, remodelación y mejoras para casas y negocios. Tengo más de 20 años de experiencia en carpintería, instalación de vidrio, puertas, ventanas, muebles y diferentes trabajos de construcción.
+
+</p>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section>
+
+<h2 data-es="Servicios" data-en="Services">Servicios</h2>
+
+<div class="services">
+
+<div class="card" data-es="Remodelaciones" data-en="Remodeling">Remodelaciones</div>
+<div class="card" data-es="Decoración y diseño" data-en="Decoration & Design">Decoración y diseño</div>
+<div class="card" data-es="Carpintería" data-en="Carpentry">Carpintería</div>
+<div class="card" data-es="Instalación de vidrio" data-en="Glass Installation">Instalación de vidrio</div>
+<div class="card" data-es="Puertas y ventanas" data-en="Doors & Windows">Puertas y ventanas</div>
+<div class="card" data-es="Trabajos generales" data-en="General Construction">Trabajos generales</div>
+<div class="card" data-es="Reparaciones" data-en="Repairs">Reparaciones</div>
+<div class="card" data-es="Proyectos personalizados" data-en="Custom Projects">Proyectos personalizados</div>
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section>
+
+<h2 data-es="Experiencia" data-en="Experience">Experiencia</h2>
+
+<div class="exp-grid">
+
+<div class="exp">
+<strong>20+ años</strong><br>
+<span data-es="Experiencia en carpintería y construcción" data-en="Carpentry and construction experience">Experiencia en carpintería y construcción</span>
+</div>
+
+<div class="exp">
+<strong>Remodelaciones</strong><br>
+<span data-es="Trabajos en casas y negocios" data-en="Residential and commercial projects">Trabajos en casas y negocios</span>
+</div>
+
+<div class="exp">
+<strong>Instalaciones</strong><br>
+<span data-es="Puertas, ventanas, vidrio y muebles" data-en="Doors, windows, glass and furniture">Puertas, ventanas, vidrio y muebles</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section>
+
+<h2 data-es="Trabajos realizados" data-en="Work Gallery">Trabajos realizados</h2>
+
+<div class="gallery">
+
+<img src="trabajo1.jpg">
+<img src="trabajo2.jpg">
+<img src="trabajo3.jpg">
+<img src="trabajo4.jpg">
+<img src="trabajo5.jpg">
+<img src="trabajo6.jpg">
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<div class="contact">
+
+<h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+
+<p>📞 959‑229‑7735</p>
+<p>✉️ Castillitosalsero1302@gmail.com</p>
+
+<p data-es="Disponible para trabajos de remodelación, decoración y construcción."
+   data-en="Available for remodeling, decoration and construction work.">
+Disponible para trabajos de remodelación, decoración y construcción.
+</p>
+
+</div>
+
+
+<a class="whatsapp" href="https://wa.me/19592297735" target="_blank">WhatsApp</a>
+
+<footer>
+Héctor Castillo • Torrington Connecticut
+</footer>
+
+<script>
+let lang='es'
+function toggleLang(){
+lang = lang==='es' ? 'en' : 'es'
+
+document.querySelectorAll('[data-es]').forEach(el=>{
+el.textContent = el.getAttribute('data-'+lang)
+})
+}
+</script>
+
+</body>
+</html>
+foto_fondo.jpg
+trabajo1.jpg
+trabajo2.jpg
